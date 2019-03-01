@@ -1,0 +1,9 @@
+sulu_core:
+    content:
+        structure:
+            default_type:
+                article: "article_default"
+            paths:
+                article:
+                    path: "%kernel.project_dir%/config/templates/articles"
+                    type: "article"
