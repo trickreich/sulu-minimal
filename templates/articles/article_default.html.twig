@@ -1,5 +1,3 @@
-{% extends "master.html.twig" %}
-
 {% block meta %}
     {% include "SuluWebsiteBundle:Extension:seo.html.twig" with {
         "seo": extension.seo|default([]),
@@ -12,7 +10,6 @@
 
 {% block content %}
     <h1 property="title">{{ content.title }}</h1>
-    <h2 property="pageTitle">{{ content.pageTitle }}</h2>
 
     <div property="article">
         {{ content.article|default()|raw }}

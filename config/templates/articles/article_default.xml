@@ -18,33 +18,27 @@
     <tag name="sulu_article.type" type="article"/>
 
     <properties>
-        <section name="highlight">
-            <properties>
-                <property name="title" type="text_line" mandatory="true">
-                    <meta>
-                        <title lang="en">Title</title>
-                        <title lang="de">Titel</title>
-                    </meta>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="en">Title</title>
+                <title lang="de">Titel</title>
+            </meta>
 
-                    <params>
-                        <param name="headline" value="true"/>
-                    </params>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
 
-                    <tag name="sulu_article.article_title"/>
-                </property>
+            <tag name="sulu_article.article_title"/>
+        </property>
 
-                <property name="pageTitle" type="text_line" mandatory="true">
-                    <tag name="sulu_article.page_title"/>
-                </property>
+        <property name="routePath" type="resource_locator" mandatory="true">
+            <meta>
+                <title lang="en">Resourcelocator</title>
+                <title lang="de">Adresse</title>
+            </meta>
 
-                <property name="routePath" type="route">
-                    <meta>
-                        <title lang="en">Resourcelocator</title>
-                        <title lang="de">Adresse</title>
-                    </meta>
-                </property>
-            </properties>
-        </section>
+            <tag name="sulu_article.article_route"/>
+        </property>
 
         <property name="article" type="text_editor">
             <meta>
